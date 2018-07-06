@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pam Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <style>
+        body {
+            font-family: proxima-nova, Helvetica, sans-serif;
+            font-weight: 100;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: #00000087;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        a {
+          color: inherit; /* blue colors for links too */
+          text-decoration: inherit; /* no underline */
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .button-container:before {
+            content: "";
+            position: fixed;
+            left: -7px;
+            right: 0;
+            top: -7px;
+            z-index: -1;
+
+            display: block;
+            background-image: url('https://spark.adobe.com/page/uZg90wWdkaysb/images/99df8c3f-81cd-43fd-a8ce-2ac18720699d.jpg?asset_id=26f0ec8c-0167-462e-8de3-4981b8263fca&img_etag=c519ad36f7e779a3b38a9cca4f496713&size=2560');
+            height: 64px;
+
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+            filter: blur(2px);
+        }
+
+        .button-container {
+            z-index: 0;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 2px 2px 12px rgb(255, 220, 59, 0.2);
+            padding: 10px;
+            width: 800px;
+        }
+
+        .social-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .button {
+            transition: 1s ease;
+            padding: 0px 10px;
+            border-style: solid;
+            border-width: thin;
+            border-radius: 1px 11px;
+            background-color: #fff9c0;
+            box-shadow: 2px 2px 12px rgb(255, 220, 59, 0.2);
+        }
+
+        .button:hover {
+            background-color: #ffd100;
+            box-shadow: 2px 2px 12px rgba(255, 219, 59, 0.883);
+            cursor: pointer;
+        }
+
+        .social {
+            margin: 0 12px;
+            width: 22px;
+            text-align: center;
+        }
+
+        .iframe {
+            border-top: solid 2px white;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 54px;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            margin-top: 3px
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+            body {
+                font-family: proxima-nova, Helvetica, sans-serif;
+                font-weight: 100;
+                font-size: 1rem;
+                line-height: 1.6;
+                color: #00000087;
+            }
+
+            .button {
+                padding: 0px 4px;
+            }
+
+            .social {
+                margin: 0 2px;
+                width: 22px;
+                text-align: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body style="margin: 0">
+    <div class="top-bar">
+        <div class="button-container">
+
+            <a href="http://pamdesign.blogspot.com.es/" target="_blank">
+                <div class="button" href="http://pamdesign.blogspot.com.es/">Blog</div>
+            </a>
+
+            <div class="social-container">
+                <a href="https://www.facebook.com/pamarwede/" target="_blank">
+                    <div class="social button">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.pinterest.com/rattypam/pamdesign/" target="_blank">
+                    <div class="social button">
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/pammarwede/" target="_blank">
+                    <div class="social button">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+
+                <a href="mailto:pam@pamdesign.com">
+                    <div class="social button">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                </a>
+            </div>
+
+            <a href="https://www.etsy.com/shop/pamdesign" target="_blank">
+                <div class="button">Buy
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <iframe src="https://spark.adobe.com/page/uZg90wWdkaysb/" class="iframe" frameborder="0" scrolling="no">
+        <p>Your browser does not support iframes. Please height="update it!"</p>
+    </iframe>
+
+</body>
+
+</html>
